@@ -1,6 +1,5 @@
 /*******************************************************************************
-  Reflow oven with profiles with dual switch  - jason kits 2018
-  ****OFFICIAL CODE*************8
+  Reflow oven with profiles with dual switch, works on jason kits 2018 hardware.. go buy it. it's good. 
   Required Libraries
   ==================
   - Arduino PID Library:
@@ -8,10 +7,6 @@
     >> https://github.com/br3ttb/Arduino-PID-Library
   - MAX31855 Library (for board v1.60 & above):
     >> https://github.com/rocketscream/MAX31855
-
-  Revision  Description
-  ========  ===========
-  2.00      Converted to use max31855 - jk
 *******************************************************************************/
 // ***** INCLUDES *****
 #include <EEPROM.h>
@@ -27,7 +22,7 @@ typedef enum REFLOW_STATE
   REFLOW_STATE_SOAK,
   REFLOW_STATE_REFLOW,
   REFLOW_STATE_COOL,
-  REFLOW_STATE_COMPLETE,
+s  REFLOW_STATE_COMPLETE,
   REFLOW_STATE_TOO_HOT,
   REFLOW_STATE_ERROR
 } reflowState_t;
